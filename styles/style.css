@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+#nav{
+    color:rgb(236, 22, 57);
+ background-color:cornflowerblue;
+ font-weight: bolder;
+    padding: 80px;
+    position:sticky;
+    text-align:center;
+    font-size: 40px;
+}
+#info{
+    color:rgb(236, 22, 57);
+    background-color:cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:relative;
+    text-align: center;
+}
+#weatherContainer {
+    background-color:cornflowerblue;
+    box-shadow: 1px 1px 5px black;
+    padding:35px;
+    border-radius: 50px;
+    position:absolute;
+    visibility: hidden;
+    margin-top:18%;
+}
+#weatherContainer h1 {
+    margin: 10px;
+    font-size: 42px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#searchContainer {
+    padding-top:5%;
+    padding-right:20%;
+    margin-left:37%;
+    position:absolute;
+}
+#searchContainer input {
+    width: 200px;
+}
+#searchContainer button {
+    background-color:cornflowerblue;
+    color: white;
+    width:100px;
+}
+.searchControl {
+    box-shadow: 2px 2px 5px cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+@media(min-width: 768px) {
+
+    #searchContainer input{
+        width: 50vh;
+        height: 10vh;
+    }
+    #searchContainer button {
+        width: 10vh;
+        height: 10vh;
+        
+    }
+}
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 20%;
+}
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+.bottom-details {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+}
+hr {
+    margin-bottom:5px;
+}
+#section1 {
+    height: 500px;
+}
+#section2 {
+    height: 500px;
+    font-family:oblique; 
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    color:rgb(236, 22, 57);
+    background-color:cornflowerblue;
+}

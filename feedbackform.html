@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body
+  {
+    text-align: center;
+    background-color: coral;
+    color:rgb(20, 247, 141);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-top: 25px;
+  }
+  #btn{
+   background-color:rgb(20, 247, 141);
+  }
+    </style>
+</head>
+<body>
+  <h1>FEEDBACK FORM</h1>
+<form method="POST" >
+    <div class="container">
+    NAME<input type="text"name="name" id="name"/><br><br>
+    MAILID <input type="text" name="mail" id="mail"/><br><br>
+  FEEDBACK <textarea  name="feed" rows="4" cols="50"></textarea><br><br>
+   <input type="submit"  value="submit" onclick="fun();" id="btn"/>
+   </div>
+   <script>
+    function fun()
+    {
+      alert('Thank You');
+    }
+   </script>
+  </form>
+  </body>
+  </html>

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Weather App</title>
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/style2.css">
+  </head>
+  <body>  
+    <link rel="stylesheet" href="styles/style1.css">
+    <div id="mySidenav" class="sidenav">
+        <a href="#section2" id="convert">Temperature Converter</a>
+        <a href="feedbackform.html" id="feedback">feedback</a>
+        <a href="#section1"id="up1">UP</a>
+      </div>
+      <div id="nav">WELCOME TO DKWEATHERS</div>
+      <div id= "info">THIS WEBSITE WILL HELP YOU TO FIND WEATHER CONDITION,WIND SPEED,HUMIDITY LEVEL</div>
+      <div id="weatherContainer">
+          <div id="weatherDescription">
+              <h1 id="cityHeader"></h1>
+              <div id="weatherMain">
+                  <div id="temperature"></div>
+                  <div id="weatherDescriptionHeader"></div>
+                  <div><img id="documentIconImg"></div>
+              </div>
+              <hr>
+              <div id="windSpeed" class="bottom-details"></div>
+              <div id="humidity" class="bottom-details"></div>
+
+          </div>
+
+      </div>
+      <div id="searchContainer">
+          <input class="searchControl" type="text" placeholder="Please Enter City Name" id="searchInput">
+          <button class="searchControl" id="searchBtn">Go!</button>
+        </div>
+      <script src="script.js"></script>
+      <div id="section1"></div>
+    <div id="section2">
+      <h2>Temperature Converter</h2>
+      <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+      
+      <p>
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+      </p>
+      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+      
+      <script>
+      function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+      }
+      </script>   
+</div>
+  </body>
+</html>
